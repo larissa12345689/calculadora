@@ -1,7 +1,9 @@
+import emoji 
+print(emoji.emojize('a matemática é :thumbs_up:'))
 
 
 
-from calculadora.operacoes import *
+from operacoes import *
 while True:
 
   y = int(input(' digite seu primeiro valor para realizar alguma operação:'))
@@ -10,8 +12,8 @@ while True:
   print('se escolher 2, será a subtração')
   print('se escolher 3, será a multiplicação')
   print('se escolher 4, será a divisão')
-  escolha = int(input('digite o número da operação: '))
   print('se escolher 0, encerrará o código')
+  escolha = int(input('digite o número da operação: '))
   if escolha == 0:
       print('obrigado(a) por participar')
       break
